@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <link rel="stylesheet" href="estilo.css">
+    <script src="main.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGNOS</title>
+
+</head>
+
+
+<body>
+
+    <div class="op">
+
+        <h1>QUEM É VOCÊ NO BANDO? <br> (de acordo com o seu signo)</h1>
+        <input type="text" class="quadrado" id="signos" placeholder="Digite seu Signo">
+        <button onclick=" signo_escolhido()">Enviar</button>
+        <div class="fala">
+
+        </div>
+        <img id="imagem">
+
+    </div>
+
+
+
+    <script>
+        function signo_escolhido() {
+            var signo = document.getElementById('signos').value
+            var texto
+
+            switch (signo) {
+
+                case 'Áries':
+                    texto = '<p> Áries (21 de março a 19 de abril) <br> Você seria: Luffy  </p>'
+
+                    document.getElementById("imagem").src = "https://media.tenor.com/72341xps0RoAAAAM/luffy-luffy-smile.gif";
+
+                    break;
+
+                case "Touro":
+                    texto = '<p>Touro (21 de abril a 20 de maio) <br> Você seria: Nami</p>'
+
+                    document.getElementById("imagem").src = "https://media.tenor.com/ILeBMUzfeyAAAAAC/nami-one-piece.gif";
+
+                    break;
+
+
+                    break;
+
+                case 'Sagitário':
+                    texto = '<p> Sagitário (21 de novembro a 22 de dezembro) <br> Voê seria: Shanks </p>'
+
+                    document.getElementById("imagem").src = "https://i.pinimg.com/originals/5e/e6/d8/5ee6d81d2e6e574c9a5aee379a13614e.gif";
+
+                    break;
+
+
+                case 'Leão':
+                    texto = '<p> Leão (22 de julho a 22 de agosto) <br>  Você seria: Brook </p>'
+
+                    document.getElementById("imagem").src = "https://media.tenor.com/rox87u4GlnwAAAAM/brook-one-piece.gif";
+
+                    break;
+
+
+                case 'Escorpião':
+                    texto = '<p>Escorpião (23 de outubro a 22 de novembro) <br> Você seria: Zoro</p>'
+
+                    document.getElementById("imagem").src = "https://media.tenor.com/gEAoW1pI6tcAAAAM/zoro.gif";
+
+                    break;
+
+
+                case 'Capricórnio':
+                    texto = '<p> Capricórnio (22 de dezembro a 21 de janeiro) <br> Você seria: Law</p>'
+
+
+                    document.getElementById("imagem").src = "https://i.pinimg.com/originals/12/7b/62/127b620b3a8726557565729a2283e236.gif";
+
+                    break;
+
+
+                case 'Aquário':
+                    texto = '<p>Aquário (22 de janeiro a 19 de fevereiro) <br> Você seria: Nico </p>'
+
+
+                    document.getElementById("imagem").src = "https://i.gifer.com/SWQX.gif";
+
+                    break;
+
+                case 'Libra':
+                    texto = '<p> Libras (23 de setembro a 22 de outubro) <br> Você seria: Nefertari </p>'
+
+                    document.getElementById("imagem").src = "https://i.gifer.com/5zlO.gif";
+                    break;
+
+
+                case 'Peixes':
+                    
+                    texto = " <p> Peixes (20 de fevereiro a 20 de março) <br> Você seria: Chopper </p>"
+
+                    document.getElementById('imagem').src = 'https://media.forgecdn.net/avatars/thumbnails/651/505/256/256/638052004936704467_animated.gif'
+
+                    break;
+
+                case 'Gêmeos':
+                    texto = '<p> Gêmeos( 21 de Maio a 20 de Junho)<br> Você seria: Franky </p>'
+
+                    document.getElementById('imagem').src = 'https://media.tenor.com/eXRMNGAUYaAAAAAC/franky-one-piece.gif'
+
+                    break;
+
+
+                case 'Câncer':
+                    texto = '<p>Câncer (21 de junho a 22 de julho) <br> Você seria: Sanji </p>'
+
+                    document.getElementById('imagem').src = 'https://media.tenor.com/QMHFxt501O0AAAAM/one-piece-sanji.gif'
+
+                    break;
+
+                case 'Virgem':
+                    texto = '<p> Virgem (23 de agosto a 22 de setembro) <br> Você seria: Boa </p>'
+
+                    document.getElementById('imagem').src = 'https://thumbs.gfycat.com/ArtisticFamousAmericanwirehair-size_restricted.gif'
+                    break;
+
+
+                default:
+                    texto = 'insira um signo válido'
+
+            }
+            document.querySelector('.fala').innerHTML = texto
+        }   
+    </script>
+
+</body>
+
+</html>

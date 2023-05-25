@@ -1,0 +1,59 @@
+* {
+
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+
+    background-image: url(https://wallpapers.com/images/hd/one-piece-4k-anime-logo-s217ktu7edueio0v.jpg);
+    background-size: 103%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    background-color: rgba(59, 114, 153, 0.453);
+    color: rgb(0, 115, 255);
+
+
+
+}
+
+
+
+h1 {
+
+    text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+    padding-bottom: 15px;
+    margin-top: 195px;
+    margin-left: 20px;
+}
+
+p{
+    margin-left: 19px;
+    color: rgb(10, 10, 212);
+    text-shadow: rgb(22, 119, 161) 1px 1px 1px;
+    font-size: 125%;
+    
+
+}
+
+
+.quadrado {
+
+    padding: 5px;
+    margin-left: 24px;
+}
+
+
+button {
+
+    padding: 3px;
+    margin-left: 5px;
+    border-width: 4px;
+    border-radius: 6px;
+
+}
+
+#imagem {
+    padding-left: 20px;
+}
